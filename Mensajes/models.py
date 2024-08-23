@@ -7,5 +7,5 @@ class Mensaje(models.Model):
     fecha_del_envio = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"Mensaje de {self.remitente} a {self.destinatario} en {self.fecha_del_envio}"
+        return f"Mensaje de {self.remitente} a {self.destinatario} el dia {self.fecha_del_envio}"
 # Create your models here.
