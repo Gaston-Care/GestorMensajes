@@ -3,9 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Mensajes Recibidos</title>
     </head>
-    <body>
-        
+    <body style="background-color: #93b9ff; color: #222222; font-family: Arial, sans-serif;">
+        <h1> Mensajes Recibidos </h1>
+        <ol>
+            {% for mensaje in mensajes %}
+                <li>
+                    <br>
+                    <b>Mensaje: </b>{{ mensaje.texto_del_mensaje }} <br> 
+                    <b>Remitente: </b>{{ mensaje.remitente }} <br>
+                    <b>Destinatario: </b>{{ mensaje.destinatario }} <br>
+                    <b>Fecha de envio: </b>{{ mensaje.fecha_del_envio }}
+                </li> <br>
+            {% endfor %}
+        </ol>
     </body>
 </html>

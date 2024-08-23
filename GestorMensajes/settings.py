@@ -55,7 +55,7 @@ ROOT_URLCONF = 'GestorMensajes.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/gaston/Escritorio/ProyectosDjango/GestorMensajes/Mensajes/templates/mensajes.html'],
+        'DIRS': ['/home/gaston/Escritorio/ProyectosDjango/GestorMensajes/Mensajes/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
