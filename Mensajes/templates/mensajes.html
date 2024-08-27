@@ -5,18 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mensajes Recibidos</title>
     </head>
-    <body style="background-color: #93b9ff; color: #222222; font-family: Arial, sans-serif;">
+    <body style="background-color: #7ba7ff; color: #222222; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
         <h1> Mensajes Recibidos </h1>
         <ol>
             {% for mensaje in mensajes %}
-                <li>
+                <li>Mensaje
                     <br>
-                    <b>Mensaje: </b>{{ mensaje.texto_del_mensaje }} <br> 
+                    <b>Texto del Mensaje: </b>{{ mensaje.texto_del_mensaje }} <br> 
                     <b>Remitente: </b>{{ mensaje.remitente }} <br>
                     <b>Destinatario: </b>{{ mensaje.destinatario }} <br>
                     <b>Fecha de envio: </b>{{ mensaje.fecha_del_envio }}
                 </li> <br>
             {% endfor %}
-        </ol>
+        </ol>  
     </body>
 </html>
